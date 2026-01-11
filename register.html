@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register | ShopKu</title>
+
+<style>
+:root{
+    --primary:#4f46e5;
+    --dark:#1f2937;
+    --gray:#6b7280;
+    --light:#f9fafb;
+}
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family:'Segoe UI',Arial,sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#eef2ff,#f0fdf4);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:var(--dark);
+}
+
+/* CARD */
+.register-box{
+    width:100%;
+    max-width:360px;
+    background:#fff;
+    padding:35px 30px;
+    border-radius:18px;
+    box-shadow:0 15px 35px rgba(0,0,0,.07);
+}
+
+.register-box h2{
+    text-align:center;
+    margin-bottom:8px;
+}
+
+.register-box p{
+    text-align:center;
+    font-size:14px;
+    color:var(--gray);
+    margin-bottom:25px;
+}
+
+/* INPUT */
+input{
+    width:100%;
+    padding:12px 14px;
+    margin-bottom:12px;
+    border-radius:10px;
+    border:1px solid #e5e7eb;
+    font-size:14px;
+}
+
+input:focus{
+    outline:none;
+    border-color:var(--primary);
+}
+
+/* BUTTON */
+button{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    background:var(--primary);
+    border:none;
+    border-radius:25px;
+    color:#fff;
+    font-size:14px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#4338ca;
+}
+
+/* LINK */
+.link{
+    margin-top:18px;
+    text-align:center;
+    font-size:14px;
+}
+
+.link a{
+    color:var(--primary);
+    text-decoration:none;
+}
+
+.link a:hover{
+    text-decoration:underline;
+}
+</style>
+</head>
+
+<body>
+
+<div class="register-box">
+    <h2>Buat Akun</h2>
+    <p>Daftar untuk mulai berbelanja</p>
+
+    <input type="text" placeholder="Nama Lengkap">
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+
+    <button onclick="alert('Akun berhasil dibuat (dummy)')">
+        Daftar
+    </button>
+
+    <div class="link">
+        Sudah punya akun?
+        <a href="login.html">Login</a>
+    </div>
+</div>
+
+</body>
+</html>
